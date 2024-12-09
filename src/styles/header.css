@@ -1,0 +1,179 @@
+
+.header-container {
+  width: 100%;
+  max-width: 1440px;
+  height: 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 1px 4px 0px rgba(166, 166, 166, 0.25);
+}
+
+.logo {
+  position: absolute;
+  top: 25px;
+  left: 5%;
+
+}
+
+.logo span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 33.38px;
+  line-height: 50.08px;
+  width: 97px;
+  letter-spacing: 3%;
+  color: #39CEF3;
+}
+
+.menu-icon {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 32px;
+  left: 22%;
+  cursor: pointer;
+}
+
+.menu-icon svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.right-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  position: absolute;
+  right: 30px;
+  top: 28px;
+}
+
+.notification-btn {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.notification-btn svg {
+  width: 100%;
+  height: 100%;
+}
+
+.play-btn{
+  border: 2.3px solid #263238CC;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #263238CC;
+}
+
+
+.play-btn svg {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  padding-left: 8px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #39CEF3;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  color: #4b5563;
+  width: 93px;
+  line-height: 21px;
+  letter-spacing: 3%;
+  text-overflow: ellipsis;
+}
+
+.dropdown-arrow {
+  width: 16px;
+  height: 16px;
+  color: #4b5563;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .right-section{
+    gap: 35px;
+    right: 20px;
+ }
+  .menu-icon{
+     left: 27%;
+  }
+  .username {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-container {
+    height: 80px;
+  }
+  .right-section{
+     gap: 20px;
+     top: 22px;
+  }
+  .play-btn svg{
+    padding: 0px;
+    height: 16px;
+    width: 16px;
+    padding-left: 2px;
+  }
+  .menu-icon svg, .play-btn, .notification-btn svg{
+    height: 27px;
+    width: 27px;
+  }
+  .menu-icon{
+    top: 22px;
+   }
+  .logo{
+    top: 22px;
+   }
+  .logo span{
+    font-size: 20px;
+    width: unset;
+    line-height: 37px;
+
+  }
+  .play-btn{
+    height: 25px;
+    width: 25px;
+  }
+
+  .menu-icon{
+    height: 30px;
+    width: 30px;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+  }
+}
